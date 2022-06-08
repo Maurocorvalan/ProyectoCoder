@@ -1,0 +1,229 @@
+body{
+    font-family: sans-serif;
+    margin: 0px;
+    background-color: rgb(0, 5, 75);
+}
+header{
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+    background-color: rgb(3, 13, 145);
+    align-items: center;
+    padding: 15px;
+    flex-direction: column;
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+nav a{
+    font-weight: 600;
+    padding: 5px 10px 0px 10px;
+}
+nav a:hover{
+    color: black;
+}
+.logo{
+    display: flex;
+}
+.logo img{
+    height: 70px;
+    padding: 5px 5px;
+}
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image:linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+        ),
+        url("../img/garaje.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+}
+#QuienesSomos{
+display: flex;
+}
+#QuienesSomos .container{
+    text-align: center;
+    padding: 200px 12px;
+    grid-template-columns:  repeat(3 1fr);
+}
+#QuienesSomos p{
+    font-size: 25px;
+    text-align: initial;
+    padding: 0px 10px;
+}
+#Destacado{
+    text-align: center;
+}
+#Destacado .container{
+    padding: 70px 10px;
+    margin-top: 0;
+}
+#Destacado h3{
+    font-size: 25px;
+    margin-top: 0px;
+}
+#Destacado p{
+    display: none;
+    font-size: 20px;
+}
+.carta{
+    padding: 50px;
+    margin-bottom: 12px;
+    border-radius: 15px;
+
+}
+.carta:first-child{
+    background-image:linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+        ),
+        url("../img/shellaceitesolo.jpg");   
+        padding: 100px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center; 
+}
+.carta:nth-child(2){
+    background-image:linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+        ),
+        url("../img/aceiteelaion.jpg");  
+        padding: 100px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;   
+}
+.carta:nth-child(3){
+    background-image:linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+        ),
+        url("../img/aceitetotal.jpg");    
+        padding: 100px; 
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center; 
+}
+#Medios-de-pago{
+    color: white;
+}
+#Medios-de-pago h3{
+    font-size: 40px;
+}
+#Medios-de-pago .container{
+    text-align: center;
+    padding: 30px 0px 30px 0px
+}
+#Medios-de-pago li{
+    padding-left: 40%;
+    margin: 12px 0px;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex
+}
+footer{
+    background-color: rgb(230 230 230);
+}
+footer .container{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+footer p{
+    margin: 0px;
+    color: rgb(100, 100, 100);
+    padding: 8px;
+}
+@media (min-width: 720px){
+    header{
+        flex-direction: row;
+        justify-content: space-between;
+        position: fixed;
+        width: 100%;
+    }
+    header nav{
+        flex-direction: row;
+        padding-right: 20px;
+    }
+    #QuienesSomos .container {
+        display: flex;
+
+    }
+    #QuienesSomos .img-container{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ), url("../img/aceitecayendo.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 550px;
+        width: 100%;
+        margin: 20px 10px 20px 20px;
+    }
+    #QuienesSomos .img-container2{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ), url("../img/imagenfondo.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 550px;
+        width: 100%;
+        margin: 20px 10px 20px 20px;
+    }
+    #Destacado .productosdestacados{
+        display: flex;
+        justify-content: center;
+    }
+    #Destacado .carta{
+        padding: 100px;
+    }
+}   
+
+#info{
+    padding: 150px 0px 20px 0px;
+    color: white;
+}
+#info .infoMenu{
+    font-size: 30px;
+}
+#servicios {
+
+}
+#servicios .servicios__tipo{
+    width: 90%;
+    display: flex;
+    grid-template-columns: repeat (2, 1fr);
+    grid-template-rows: repeat(2, auto);
+}
+.servicios__tipo1{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    align-items: flex-end;
+    justify-content: end;
+    grid-column-end: auto;
+}
