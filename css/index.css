@@ -2,6 +2,7 @@ body{
     font-family: sans-serif;
     margin: 0px;
     background-color: rgb(0, 5, 75);
+    padding: 0px 10% 0px 10%;
 }
 header{
     display: flex;
@@ -11,6 +12,10 @@ header{
     align-items: center;
     padding: 15px;
     flex-direction: column;
+    background-image: url(../img/imgcabe.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 header nav{
     display: flex;
@@ -29,7 +34,7 @@ nav a{
     padding: 5px 10px 0px 10px;
 }
 nav a:hover{
-    color: black;
+    color: yellow;
 }
 .logo{
     display: flex;
@@ -60,8 +65,10 @@ display: flex;
 }
 #QuienesSomos .container{
     text-align: center;
-    padding: 200px 12px;
+    padding: auto;
     grid-template-columns:  repeat(3 1fr);
+    margin: 10px;
+    background-color:  rgba(0, 0, 0, 0.5) ;
 }
 #QuienesSomos p{
     font-size: 25px;
@@ -140,7 +147,8 @@ display: flex;
     margin: 12px 0px;
     font-weight: bold;
     text-decoration: none;
-    display: flex
+    display: flex;
+    justify-content: flex-start;
 }
 footer{
     background-color: rgb(230 230 230);
@@ -158,14 +166,18 @@ footer p{
 }
 @media (min-width: 720px){
     header{
+        display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        position: fixed;
-        width: 100%;
+        align-items: center;
+        background-image: url(../img/imgcabe.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center; 
     }
     header nav{
+        display: flex;
         flex-direction: row;
-        padding-right: 20px;
+        font-size: 20px;
     }
     #QuienesSomos .container {
         display: flex;
@@ -197,7 +209,10 @@ footer p{
     }
     #Destacado .productosdestacados{
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
+        align-items: center;
+        
+
     }
     #Destacado .carta{
         padding: 100px;
