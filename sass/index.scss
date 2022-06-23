@@ -1,0 +1,15 @@
+/* MISC */
+@import './misc/normalize.scss';
+@import './misc/variables.scss';
+@import './misc/mixins.scss';
+
+/* PARTIALS*/
+@import './partials/header';
+
+
+/* VIEWS */
+@import './views/home';
+@import './views/productos';
+@import './views/servicios';
+@import './views/galeria';
+@import './views/contacto';

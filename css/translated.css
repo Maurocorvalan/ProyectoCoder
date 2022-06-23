@@ -1,0 +1,27 @@
+/* MISC */
+/* PARTIALS*/
+header {
+  display: flex;
+  height: auto;
+  justify-content: space-between;
+  background-color: #030d91;
+  align-items: center;
+  padding: 15px;
+  flex-direction: column;
+  background-image: url(../img/imgcabe.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+  header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+/* VIEWS */
+#Destacado {
+  text-align: center; }
+
+#Destacado .container-fluid .productosdestacados .carta {
+  padding: 50px;
+  margin-bottom: 12px;
+  border-radius: 15px; }
